@@ -1,206 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZR Ballet Studio</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-<style>
-:where([class^="ri-"])::before { content: "\f3c2"; }
-.font-cormorant { font-family: 'Cormorant Garamond', serif; }
-.font-montserrat { font-family: 'Montserrat', sans-serif; }
-</style>
-<script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-primary: '#F8E1E4',
-secondary: '#E5E5E5'
-},
-borderRadius: {
-'none': '0px',
-'sm': '4px',
-DEFAULT: '8px',
-'md': '12px',
-'lg': '16px',
-'xl': '20px',
-'2xl': '24px',
-'3xl': '32px',
-'full': '9999px',
-'button': '8px'
-}
-}
-}
-}
-</script>
-</head>
-<body class="bg-white font-montserrat">
-<header class="fixed w-full bg-white/90 backdrop-blur-sm z-50">
-<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-<img src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/92e43a386d346c8d3c71bd64bd004f26.png" alt="ZR Ballet Studio" class="h-12">
-<div class="hidden md:flex items-center space-x-8">
-<a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
-<a href="#" class="text-gray-600 hover:text-gray-900">Classes</a>
-<a href="#" class="text-gray-600 hover:text-gray-900">Schedule</a>
-<a href="#" class="text-gray-600 hover:text-gray-900">About</a>
-<a href="#" class="text-gray-600 hover:text-gray-900">Gallery</a>
-<a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
-<a href="https://forms.gle/d9cSjJ9HGFdbgFZK6" target="_blank" class="bg-primary text-gray-800 px-6 py-2 !rounded-button hover:bg-opacity-80 transition-all">Book Now</a>
-</div>
-<button class="md:hidden w-10 h-10 flex items-center justify-center">
-<i class="ri-menu-line text-2xl"></i>
-</button>
-</nav>
-</header>
-<main>
-<section class="relative min-h-screen flex items-center" style="background-image: url('https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/878b41a56a38096e19b10f2feac822d9.jpeg'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-white/40"></div>
-<div class="container mx-auto px-6 relative">
-<div class="max-w-2xl">
-<h1 class="text-6xl font-cormorant font-light mb-6 text-gray-900">Where Grace Meets Passion</h1>
-<p class="text-xl mb-8 text-gray-700">Experience the art of ballet in our state-of-the-art studio. Professional instruction for all levels.</p>
-<a href="https://forms.gle/d9cSjJ9HGFdbgFZK6" target="_blank" class="bg-primary text-gray-800 px-8 py-3 !rounded-button hover:bg-opacity-80 transition-all text-lg">Start Your Journey</a>
-</div>
-</div>
-</section>
-<section class="py-20 bg-white">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div>
-<h2 class="text-4xl font-cormorant mb-6 text-gray-900">Our Studio</h2>
-<p class="text-gray-600 mb-6 leading-relaxed">At ZR Ballet Studio, our mission is to inspire and nurture a love for ballet in students of all ages and skill levels. We aim to create a supportive environment where individuals can grow, develop their technique, and enjoy the beauty of dance.</p>
-<p class="text-gray-600 mb-6 leading-relaxed">Founded in 2022, ZR Ballet Studio offers high-quality ballet training for students of all ages and levels. Specializing in RAD syllabus training, we provide an inspiring environment where students can develop their skills and passion for dance.</p>
-<p class="text-gray-600 mb-8 leading-relaxed">Our studio is proud to hold annual RAD ballet examinations and organize ballet concerts at the National Theatre of Namibia, offering our students invaluable performance opportunities.</p>
-<button class="bg-primary text-gray-800 px-6 py-2 !rounded-button hover:bg-opacity-80 transition-all">Learn More</button>
-</div>
-<div>
-<img src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/91c427cf3dd04b981ccc2dc2f8e042f9.jpeg" alt="Ballet Studio" class="w-full h-[600px] object-cover rounded-lg shadow-lg">
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-secondary/20">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-cormorant text-center mb-16 text-gray-900">Our Classes</h2>
-<div class="grid md:grid-cols-4 gap-8">
-<div class="bg-white p-8 rounded-lg shadow-sm">
-<h3 class="text-2xl font-cormorant mb-4 text-gray-900">For the Little Ones</h3>
-<p class="text-gray-600 mb-6">Twinkle Toes</p>
-<div class="flex items-center justify-between text-sm text-gray-500">
-<span>Ages 3 - 5</span>
-</div>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm">
-<h3 class="text-2xl font-cormorant mb-4 text-gray-900">Vocational</h3>
-<p class="text-gray-600 mb-6">Intermediate Foundation to Advanced 2</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm">
-<h3 class="text-2xl font-cormorant mb-4 text-gray-900">Grades</h3>
-<p class="text-gray-600 mb-6">Pre-Primary to Grade 8</p>
-<div class="flex items-center justify-between text-sm text-gray-500">
-<span>Ages 6+</span>
-</div>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm">
-<h3 class="text-2xl font-cormorant mb-4 text-gray-900">Adult Classes</h3>
-<p class="text-gray-600 mb-6">For Fun & Fitness</p>
-<div class="flex items-center justify-between text-sm text-gray-500">
-<span>Ages 20+</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-white">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-cormorant text-center mb-16 text-gray-900">Frequently Asked Questions</h2>
-<div class="space-y-6 max-w-3xl mx-auto">
-<div class="bg-secondary/10 p-8 rounded-lg">
-<h3 class="text-xl font-medium text-gray-900 mb-4">What should I wear to class?</h3>
-<p class="text-gray-600">Students should wear proper ballet attire: leotard, ballet tights, and ballet shoes. Hair must be neatly tied back in a bun. Adult beginners can wear comfortable workout clothing.</p>
-</div>
-<div class="bg-secondary/10 p-8 rounded-lg">
-<h3 class="text-xl font-medium text-gray-900 mb-4">What age can children start ballet?</h3>
-<p class="text-gray-600">Children can start ballet from age 3 in our 'Twinkle Toes' classes, designed for young beginners.</p>
-</div>
-<div class="bg-secondary/10 p-8 rounded-lg">
-<h3 class="text-xl font-medium text-gray-900 mb-4">Do I need prior experience to join?</h3>
-<p class="text-gray-600">No prior experience is required. We offer classes for all levels, from beginners to advanced dancers.</p>
-</div>
-<div class="bg-secondary/10 p-8 rounded-lg">
-<h3 class="text-xl font-medium text-gray-900 mb-4">How do I register for classes?</h3>
-<p class="text-gray-600">Contact us via email or phone to receive the registration form and class schedule.</p>
-</div>
-<div class="bg-secondary/10 p-8 rounded-lg">
-<h3 class="text-xl font-medium text-gray-900 mb-4">Can I watch my child's class?</h3>
-<p class="text-gray-600">Parents are welcome to attend special open classes and performances held throughout the year.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-primary/10">
-<div class="container mx-auto px-6">
-<div class="text-center max-w-2xl mx-auto">
-<h2 class="text-4xl font-cormorant mb-6 text-gray-900">Join Our Community</h2>
-<p class="text-gray-600 mb-8">Start your ballet journey today. Experience the grace, strength, and artistry of classical dance.</p>
-<a href="https://forms.gle/d9cSjJ9HGFdbgFZK6" target="_blank" class="inline-block bg-primary text-gray-800 px-8 py-3 !rounded-button hover:bg-opacity-80 transition-all text-lg">Schedule a Trial Class</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-gray-900 text-white py-16">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-4 gap-8">
-<div>
-<img src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/92e43a386d346c8d3c71bd64bd004f26.png" alt="ZR Ballet Studio" class="h-8 mb-4">
-<p class="text-gray-400">Where passion meets perfection in classical ballet training.</p>
-</div>
-<div>
-<h4 class="text-lg mb-4">Contact</h4>
-<p class="text-gray-400 mb-2">Faraday, Windhoek</p>
-<p class="text-gray-400 mb-2">zaandre@zrballet.studio</p>
-<p class="text-gray-400">+264 81 148 4040</p>
-</div>
-<div>
-<h4 class="text-lg mb-4">Hours</h4>
-<p class="text-gray-400">Open ⋅ Closes 8 pm</p>
-</div>
-<div>
-<h4 class="text-lg mb-4">Follow Us</h4>
-<div class="flex space-x-4">
-<a href="https://www.instagram.com/zrballetstudio/" class="text-gray-400 hover:text-white">
-<i class="ri-instagram-line text-xl"></i>
-</a>
-<a href="https://www.facebook.com/ZRBalletStudio" class="text-gray-400 hover:text-white">
-<i class="ri-facebook-line text-xl"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-white">
-<i class="ri-twitter-line text-xl"></i>
-</a>
-</div>
-</div>
-</div>
-<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-<p>&copy; 2025 ZR Ballet Studio. All rights reserved.</p>
-</div>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-if (window.scrollY > 50) {
-header.classList.add('shadow-sm');
-} else {
-header.classList.remove('shadow-sm');
-}
-});
-});
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZR Ballet Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+      .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F8E1E4",
+              secondary: "#E5E5E5",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-montserrat">
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <img
+          src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/92e43a386d346c8d3c71bd64bd004f26.png"
+          alt="ZR Ballet Studio"
+          class="h-12"
+        />
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="#classes" class="text-gray-600 hover:text-gray-900"
+            >Classes</a
+          >
+          <a
+            href="#faqs"
+            class="text-gray-600 hover:text-gray-900"
+            onclick="document.getElementById('faqs').scrollIntoView({behavior: 'smooth', block: 'start'})"
+            >FAQs</a
+          >
+          <a href="schedule.html" class="text-gray-600 hover:text-gray-900"
+            >Schedule</a
+          >
+          <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+          <a href="gallery.html" class="text-gray-600 hover:text-gray-900"
+            >Gallery</a
+          >
+          <a
+            href="https://forms.gle/d9cSjJ9HGFdbgFZK6"
+            target="_blank"
+            class="bg-primary text-gray-800 px-6 py-2 !rounded-button hover:bg-opacity-80 transition-all"
+            >Book Now</a
+          >
+        </div>
+        <button class="md:hidden w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="relative min-h-screen flex items-center"
+        style="background-image: url('https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/878b41a56a38096e19b10f2feac822d9.jpeg'); background-size: cover; background-position: center;"
+      >
+        <div class="absolute inset-0 bg-white/40"></div>
+        <div class="container mx-auto px-6 relative">
+          <div class="max-w-2xl">
+            <h1 class="text-6xl font-cormorant font-light mb-6 text-white">
+              Where Grace Meets Passion
+            </h1>
+            <p class="text-xl mb-8 text-white">
+              Experience the art of ballet in our state-of-the-art studio.
+              Professional instruction for all levels.
+            </p>
+            <a
+              href="https://forms.gle/d9cSjJ9HGFdbgFZK6"
+              target="_blank"
+              class="bg-primary text-gray-800 px-8 py-3 !rounded-button hover:bg-opacity-80 transition-all text-lg"
+              >Start Your Journey</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 class="text-4xl font-cormorant mb-6 text-gray-900">
+                Our Studio
+              </h2>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                At ZR Ballet Studio, our mission is to inspire and nurture a
+                love for ballet in students of all ages and skill levels. We aim
+                to create a supportive environment where individuals can grow,
+                develop their technique, and enjoy the beauty of dance.
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Founded in 2022, ZR Ballet Studio offers high-quality ballet
+                training for students of all ages and levels. Specializing in
+                RAD syllabus training, we provide an inspiring environment where
+                students can develop their skills and passion for dance.
+              </p>
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                Our studio is proud to hold annual RAD ballet examinations and
+                organize ballet concerts at the National Theatre of Namibia,
+                offering our students invaluable performance opportunities.
+              </p>
+              <button
+                class="bg-primary text-gray-800 px-6 py-2 !rounded-button hover:bg-opacity-80 transition-all"
+              >
+                Learn More
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/91c427cf3dd04b981ccc2dc2f8e042f9.jpeg"
+                alt="Ballet Studio"
+                class="w-full h-[600px] object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="classes" class="py-20 bg-secondary/20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-cormorant text-center mb-16 text-gray-900">
+            Classes
+          </h2>
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <h3 class="text-2xl font-cormorant mb-4 text-gray-900">
+                For the Little Ones
+              </h3>
+              <p class="text-gray-600 mb-6">Twinkle Toes</p>
+              <div
+                class="flex items-center justify-between text-sm text-gray-500"
+              >
+                <span>Ages 3 - 5</span>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <h3 class="text-2xl font-cormorant mb-4 text-gray-900">
+                Vocational
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Intermediate Foundation to Advanced 2
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <h3 class="text-2xl font-cormorant mb-4 text-gray-900">Grades</h3>
+              <p class="text-gray-600 mb-6">Pre-Primary to Grade 8</p>
+              <div
+                class="flex items-center justify-between text-sm text-gray-500"
+              >
+                <span>Ages 6+</span>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <h3 class="text-2xl font-cormorant mb-4 text-gray-900">
+                Adult Classes
+              </h3>
+              <p class="text-gray-600 mb-6">For Fun & Fitness</p>
+              <div
+                class="flex items-center justify-between text-sm text-gray-500"
+              >
+                <span>Ages 20+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faqs" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-cormorant text-center mb-16 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <div class="space-y-6 max-w-3xl mx-auto">
+            <div class="bg-secondary/10 p-8 rounded-lg">
+              <h3 class="text-xl font-medium text-gray-900 mb-4">
+                What should I wear to class?
+              </h3>
+              <p class="text-gray-600">
+                Students should wear proper ballet attire: leotard, ballet
+                tights, and ballet shoes. Hair must be neatly tied back in a
+                bun. Adult beginners can wear comfortable workout clothing.
+              </p>
+            </div>
+            <div class="bg-secondary/10 p-8 rounded-lg">
+              <h3 class="text-xl font-medium text-gray-900 mb-4">
+                What age can children start ballet?
+              </h3>
+              <p class="text-gray-600">
+                Children can start ballet from age 3 in our 'Twinkle Toes'
+                classes, designed for young beginners.
+              </p>
+            </div>
+            <div class="bg-secondary/10 p-8 rounded-lg">
+              <h3 class="text-xl font-medium text-gray-900 mb-4">
+                Do I need prior experience to join?
+              </h3>
+              <p class="text-gray-600">
+                No prior experience is required. We offer classes for all
+                levels, from beginners to advanced dancers.
+              </p>
+            </div>
+            <div class="bg-secondary/10 p-8 rounded-lg">
+              <h3 class="text-xl font-medium text-gray-900 mb-4">
+                How do I register for classes?
+              </h3>
+              <p class="text-gray-600">
+                Contact us via email or phone to receive the registration form
+                and class schedule.
+              </p>
+            </div>
+            <div class="bg-secondary/10 p-8 rounded-lg">
+              <h3 class="text-xl font-medium text-gray-900 mb-4">
+                Can I watch my child's class?
+              </h3>
+              <p class="text-gray-600">
+                Parents are welcome to attend special open classes and
+                performances held throughout the year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-primary/10">
+        <div class="container mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-4xl font-cormorant mb-6 text-gray-900">
+              Join Our Community
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Start your ballet journey today. Experience the grace, strength,
+              and artistry of classical dance.
+            </p>
+            <a
+              href="https://forms.gle/d9cSjJ9HGFdbgFZK6"
+              target="_blank"
+              class="inline-block bg-primary text-gray-800 px-8 py-3 !rounded-button hover:bg-opacity-80 transition-all text-lg"
+              >Schedule a Trial Class</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/92e43a386d346c8d3c71bd64bd004f26.png"
+              alt="ZR Ballet Studio"
+              class="h-8 mb-4"
+            />
+            <p class="text-gray-400">
+              Where passion meets perfection in classical ballet training.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg mb-4">Contact</h4>
+            <p class="text-gray-400 mb-2">Faraday, Windhoek</p>
+            <p class="text-gray-400 mb-2">zaandre@zrballet.studio</p>
+            <p class="text-gray-400">+264 81 148 4040</p>
+          </div>
+          <div>
+            <h4 class="text-lg mb-4">Hours</h4>
+            <p class="text-gray-400">Open ⋅ Closes 8 pm</p>
+          </div>
+          <div>
+            <h4 class="text-lg mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.instagram.com/zrballetstudio/"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-instagram-line text-xl"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/ZRBalletStudio"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-facebook-line text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-twitter-line text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 ZR Ballet Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            header.classList.add("shadow-sm");
+          } else {
+            header.classList.remove("shadow-sm");
+          }
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            const headerHeight = document.querySelector("header").offsetHeight;
+            if (targetElement) {
+              const targetPosition = targetElement.offsetTop - headerHeight;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF82A9",
+              secondary: "#F8F0E5",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white min-h-screen">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div
+        class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <a
+            href="https://readdy.ai/home/7a622dd9-991e-4bed-8577-527c7bd63ba9/d059c280-ad5e-4290-8163-6b425a17f5cf"
+            data-readdy="true"
+            class="w-10 h-10 flex items-center justify-center cursor-pointer"
+          >
+            <i class="ri-arrow-left-line text-xl"></i>
+          </a>
+          <a href="/" class="h-8">
+            <img
+              src="https://static.readdy.ai/image/dd34f4e8bab84a4a6dc2082b617da429/92e43a386d346c8d3c71bd64bd004f26.png"
+              alt="ZR Ballet Studio"
+              class="h-full"
+            />
+          </a>
+        </div>
+        <h1 class="text-xl font-semibold">Schedule</h1>
+        <!-- Remove filter button -->
+      </div>
+    </header>
+    <div class="max-w-5xl mx-auto px-4 pt-20 pb-6">
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border p-3 text-left">Time</th>
+              <th class="border p-3 text-left">Monday</th>
+              <th class="border p-3 text-left">Tuesday</th>
+              <th class="border p-3 text-left">Wednesday</th>
+              <th class="border p-3 text-left">Thursday</th>
+              <th class="border p-3 text-left">Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border p-3">13:30 to 14:00</td>
+              <td class="border p-3">Twinkel Toes - DTYOT (3 to 5)</td>
+              <td class="border p-3">—</td>
+              <td class="border p-3">Twinkel Toes - DTYOT (3 to 5)</td>
+              <td class="border p-3">—</td>
+              <td class="border p-3">—</td>
+            </tr>
+            <tr>
+              <td class="border p-3">14:00 to 15:00</td>
+              <td class="border p-3">Primary (6 to 7)</td>
+              <td class="border p-3">Pre-Primary (5 to 6)</td>
+              <td class="border p-3">Primary (6 to 7)</td>
+              <td class="border p-3">Pre-Primary (5 to 6)</td>
+              <td class="border p-3">Grade 6 (12 to 13)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">15:00 to 16:00</td>
+              <td class="border p-3">Grade 3 (9 to 10)</td>
+              <td class="border p-3">Grade 1 (7 to 8)</td>
+              <td class="border p-3">Grade 3 (9 to 10)</td>
+              <td class="border p-3">Grade 1 (7 to 8)</td>
+              <td class="border p-3">Intermediate Foundation (12 & older)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">16:00 to 17:00</td>
+              <td class="border p-3">Grade 6 (12 to 13)</td>
+              <td class="border p-3">Grade 4 (10 to 11)</td>
+              <td class="border p-3">Grade 6 (12 to 13)</td>
+              <td class="border p-3">Grade 4 (10 to 11)</td>
+              <td class="border p-3">Intermediate (13 & older)</td>
+            </tr>
+            <tr>
+              <td class="border p-3">17:00 to 18:00</td>
+              <td class="border p-3">Intermediate (13 & older)</td>
+              <td class="border p-3">Intermediate Foundation (12 & older)</td>
+              <td class="border p-3">Intermediate (13 & older)</td>
+              <td class="border p-3">Intermediate Foundation (12 & older)</td>
+              <td class="border p-3">Advance 1</td>
+            </tr>
+            <tr>
+              <td class="border p-3">18:00 to 19:00</td>
+              <td class="border p-3">Advance 1</td>
+              <td class="border p-3">Advance 1</td>
+              <td class="border p-3">Adult Ballet Class (20 & older)</td>
+              <td class="border p-3">Advance 1</td>
+              <td class="border p-3">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Remove filter modal as it's not needed for the static timetable -->
+    <script>
+      // Remove mockSchedule as it's no longer needed with the static table
+      function generateDates() {
+        const datesContainer = document.querySelector("#dateScroll > div");
+        const today = new Date("2025-03-10");
+        for (let i = 0; i < 14; i++) {
+          const date = new Date(today);
+          date.setDate(today.getDate() + i);
+          const dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+          const dayName = dayNames[date.getDay()];
+          const dayNum = date.getDate();
+          const dateEl = document.createElement("button");
+          dateEl.className = `flex flex-col items-center p-3 rounded-full cursor-pointer min-w-[60px] ${i === 0 ? "bg-primary text-white" : "hover:bg-gray-100"}`;
+          dateEl.innerHTML = `
+      <span class="text-sm font-medium">${dayName}</span>
+      <span class="text-lg font-semibold">${dayNum}</span>
+      `;
+          dateEl.onclick = () => selectDate(dateEl);
+          datesContainer.appendChild(dateEl);
+        }
+      }
+      function selectDate(el) {
+        document.querySelectorAll("#dateScroll button").forEach((btn) => {
+          btn.classList.remove("bg-primary", "text-white");
+          btn.classList.add("hover:bg-gray-100");
+        });
+        el.classList.add("bg-primary", "text-white");
+        el.classList.remove("hover:bg-gray-100");
+        renderClasses();
+      }
+      function renderClasses() {
+        const container = document.getElementById("scheduleList");
+        container.innerHTML = "";
+        mockClasses.forEach((cls) => {
+          const card = document.createElement("div");
+          card.className =
+            "bg-white rounded-lg shadow-sm p-4 cursor-pointer hover:shadow-md transition-shadow";
+          card.innerHTML = `
+      <div class="flex justify-between items-start">
+      <div>
+      <p class="text-lg font-semibold">${cls.time}</p>
+      <h3 class="text-xl font-bold mt-1">${cls.name}</h3>
+      <p class="text-gray-600 mt-1">with ${cls.instructor}</p>
+      <div class="flex items-center mt-2">
+      <span class="px-2 py-1 bg-secondary text-sm rounded-full">${cls.level}</span>
+      <span class="ml-3 text-sm text-gray-600">${cls.enrolled}/${cls.capacity} spots</span>
+      </div>
+      </div>
+      <div class="flex flex-col items-end">
+      <span class="px-3 py-1 rounded-full text-sm ${
+            cls.status === "available"
+              ? "bg-green-100 text-green-800"
+              : cls.status === "full"
+                ? "bg-red-100 text-red-800"
+                : "bg-yellow-100 text-yellow-800"
+          }">
+      ${cls.status.charAt(0).toUpperCase() + cls.status.slice(1)}
+      </span>
+      ${
+        cls.status === "available"
+          ? `
+      <button class="mt-4 px-4 py-2 bg-primary text-white rounded-button whitespace-nowrap hover:bg-opacity-90">
+      Book Class
+      </button>
+      `
+          : ""
+      }
+      </div>
+      </div>
+      `;
+          container.appendChild(card);
+        });
+      }
+      function toggleFilter() {
+        const modal = document.getElementById("filterModal");
+        modal.classList.toggle("hidden");
+        modal.classList.toggle("flex");
+      }
+      function clearFilters() {
+        document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+          checkbox.checked = false;
+        });
+      }
+      function applyFilters() {
+        toggleFilter();
+        renderClasses();
+      }
+      document.getElementById("filterBtn").addEventListener("click", toggleFilter);
+      renderSchedule();
+    </script>
+  </body>
+</html>
